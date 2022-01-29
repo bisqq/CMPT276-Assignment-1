@@ -1,0 +1,195 @@
+
+body {
+    background-color: #A6192E;
+}
+
+.TopBackgroundColour {
+    min-height: 4em;
+    margin: -1em auto;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: #3B3835;
+}
+
+.BackgroundColour {
+    margin-top: -1em;
+    margin-bottom: 0;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-bottom: 3em;
+    background-color: white;
+}
+
+.BottomBackgroundColour {
+    min-height: 4em;
+    margin: -1em auto;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: #3B3835;
+}
+
+.HeaderText {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-top: 2.5em;
+}
+
+.Scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Form {
+    width: 70vw;
+    min-height: 34em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    background-color: #EAEFF1; 
+}
+
+.ActivityText {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    margin-left: 0.8em;
+    margin-bottom: 1em;
+    padding-top: 1.5em;
+    color: #CC0633;
+}
+
+.Text {
+    margin-top: 2em;
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.table {
+    margin: 2em 1em;
+    font-size: 0.9em;
+
+    width: 97%;
+    
+    border: 1px solid rgb(165, 165, 165);
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.table thead tr {
+    text-align: left;
+    background-color: #DDDDDD;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+.table th, .table td {
+    text-align: left;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+td {
+    width: 20%;
+}
+
+.ButtonAddAcitivity {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    width: 8em;
+    height: 2.5em;
+    bottom: 9em;
+
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #CC0633; 
+    border-radius: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 0;
+}
+
+.ButtonWeighted {
+    margin-bottom: 1em;
+    margin-right: 0.1em;
+    margin-top: 1em;
+    width: 7em;
+    height: 2.5em;
+    bottom: 9em;
+
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #CC0633; 
+    border-radius: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 0;
+
+    float: right;
+}
+
+.ButtonMean {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    width: 7em;
+    height: 2.5em;
+    bottom: 9em;
+    
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #CC0633; 
+    border-radius: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 0;
+
+    float: right;
+}
+
+.AddEmpty {
+    clear: both;
+}
+
+.TextField[type = number] {
+    width: 3em;
+    height: 2em;
+}
+
+.LabelSize {
+    font-size: 1.5em;
+}
+
+.ResultLabelSize {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    bottom: 3.5em;
+    margin-left: 0.8em;
+    color: #CC0633;
+}
+
+.ResultText {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 0.8em;
+    font-size: 1em;
+    bottom: 3.5em;
+    color: #CC0633;
+}

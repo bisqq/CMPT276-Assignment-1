@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="./stylesheets/calculator.css">
+</head>
+    <body class = "Scroll">
+        <main>
+          <div class = "TopBackgroundColour"></div>
+          <div class = "BackgroundColour">
+            <h1 class = "HeaderText">Grade Calculator</h1>
+            <div>
+              <form class = "Form">
+                <div>
+                  <h2 class = "ActivityText">Activities</h2>
+                  <p class = "Text">Give grades to the numeric activities:</p>
+                </div>
+                <div>
+                  <table class = "table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Short Name</th>
+                        <th>Weight</th>
+                        <th>Grade</th>
+                        <th>Percent</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Activity 1</td>
+                        <td>A1</td>
+                        <td><input class = "TextField" type="number" name="nameWeight"></td>
+                        <td>
+                          <input class = "TextField" type="number" name="fname" onkeyup = "calculatePercentageOne()">
+                          <label class = "LabelSize">/</label>
+                          <input class = "TextField" type="number" name="lname" onkeyup = "calculatePercentageTwo()">
+                        </td>
+                        <td>
+                          <h3 id = "percent-1"></h3>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td>Activity 2</td>
+                        <td>A2</td>
+                        <td><input class = "TextField" type="number" name="nameWeight"></td>
+                        <td>
+                          <input class = "TextField" type="number" name="fname" onkeyup = "calculatePercentageOne()">
+                          <label class = "LabelSize">/</label>
+                          <input class = "TextField" type="number" name="lname" onkeyup = "calculatePercentageTwo()">
+                        </td>
+                        <td>
+                          <h3 id = "percent-2"></h3>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td>Activity 3</td>
+                        <td>A3</td>
+                        <td><input class = "TextField" type="number" name="nameWeight"></td>
+                        <td>
+                          <input class = "TextField" type="number" name="fname" onkeyup = "calculatePercentageOne()">
+                          <label class = "LabelSize">/</label>
+                          <input class = "TextField" type="number" name="lname" onkeyup = "calculatePercentageTwo()">
+                        </td>
+                        <td>
+                          <h3 id = "percent-3"></h3>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td>Activity 4</td>
+                        <td>A4</td>
+                        <td><input class = "TextField" type="number" name="nameWeight"></td>
+                        <td>
+                          <input class = "TextField" type="number" name="fname" onkeyup = "calculatePercentageOne()">
+                          <label class = "LabelSize">/</label>
+                          <input class = "TextField" type="number" name="lname" onkeyup = "calculatePercentageTwo()">
+                        </td>
+                        <td>
+                          <h3 id = "percent-4"></h3>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <button class = "ButtonAddAcitivity">ADD ACTIVITY</button>
+                  <h2 class = "ResultLabelSize">Result</h2>
+                  <h3 class = "ResultText"></h3>
+                  <button class = "ButtonMean">MEAN</button>
+                  <button class = "ButtonWeighted">WEIGHTED</button>
+                  <div class = "AddEmpty"></div>
+                </div>
+            </form>
+            </div>
+          </div>
+          <div class = "BottomBackgroundColour"></div>
+          </main>
+    </body>
+    <script src="calculator.js"></script>
+</html>
