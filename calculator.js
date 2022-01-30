@@ -14,9 +14,9 @@ addActivity.addEventListener("click", function addRow(e) {
         <td>A` + count + `</td>
         <td><input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="nameWeight"></td>
         <td>
-        <input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="fname" onkeyup = "calculatePercentageOne()">
+        <input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="fname" onkeyup = "calculatePercentage()">
         <label class = "LabelSize">/</label>
-        <input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="lname" onkeyup = "calculatePercentageTwo()">
+        <input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="lname" onkeyup = "calculatePercentage()">
         </td>
         <td>
           <h3 class = "headerThree" id = "percent-` + count + `"></h3>
@@ -51,6 +51,7 @@ addActivity.addEventListener("click", function addRow(e) {
 
       } else if (firstValueEl[i].value == "" || SecondValueEl[i].value == "") {
         alert("Some fields are empty, so your grade might not be calculated properly");
+        return;
       }
     }
 
@@ -89,6 +90,7 @@ addActivity.addEventListener("click", function addRow(e) {
 
       } else if (firstValueEl[i].value == "" || SecondValueEl[i].value == "" || thirdValueEl[i].value == "") {
         alert("Some fields are empty, so your grade might not be calculated properly");
+        return;
       }
     }
 
@@ -102,7 +104,7 @@ addActivity.addEventListener("click", function addRow(e) {
 
   });
 
- function calculatePercentageOne() {
+ function calculatePercentage() {
 
     let firstValueEl = document.getElementsByName("fname");
     let SecondValueEl = document.getElementsByName("lname");
@@ -110,30 +112,13 @@ addActivity.addEventListener("click", function addRow(e) {
 
     for (let i = 0; i < firstValueEl.length; i++) {
 
-      result = Number(Number(firstValueEl[i].value) /  Number(SecondValueEl[i].value) * 100).toFixed(2);
-      console.log(result);
-
-      if (firstValueEl[i].value != "" || SecondValueEl[i].value != "") {
+      if (firstValueEl[i].value != "" && SecondValueEl[i].value != "") {
+        result = Number(Number(firstValueEl[i].value) /  Number(SecondValueEl[i].value) * 100).toFixed(2);
         document.getElementById("percent-" + (i+1)).innerHTML = result + `%`;
+
+      } else {
+        document.getElementById("percent-" + (i+1)).innerHTML = ``;
       }
     }
-
-  }
-
-function calculatePercentageTwo() {
-
-  let firstValueEl = document.getElementsByName("fname");
-  let SecondValueEl = document.getElementsByName("lname");
-  let result = Number(0);
-
-  for (let i = 0; i < SecondValueEl.length; i++) {
-
-    result = Number(Number(firstValueEl[i].value) /  Number(SecondValueEl[i].value) * 100).toFixed(2);
-    console.log(result);
-
-    if (firstValueEl[i].value != "" || SecondValueEl[i].value != "") {
-      document.getElementById("percent-" + (i+1)).innerHTML = result + `%`;
-    }
-  }
 
   }
