@@ -12,11 +12,11 @@ addActivity.addEventListener("click", function addRow(e) {
       <tr>
         <td>Activity` + count + `</td>
         <td>A` + count + `</td>
-        <td><input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="nameWeight"></td>
+        <td><input class = "TextField" type="number" oninput="validity.valid||(value='');" min="0" name="nameWeight"></td>
         <td>
-        <input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="fname" onkeyup = "calculatePercentage()">
+        <input class = "TextField" type="number" oninput="validity.valid||(value='');" min="0" name="fname" onkeyup = "calculatePercentage()">
         <label class = "LabelSize">/</label>
-        <input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="lname" onkeyup = "calculatePercentage()">
+        <input class = "TextField" type="number" oninput="validity.valid||(value='');" min="0" name="lname" onkeyup = "calculatePercentage()">
         </td>
         <td>
           <h3 class = "headerThree" id = "percent-` + count + `"></h3>
