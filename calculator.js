@@ -6,23 +6,25 @@ let count = 4;
 addActivity.addEventListener("click", function addRow(e) {
     e.preventDefault();
     count += 1;
-    const row = document.querySelector("table").innerHTML += `
-    <tbody>
-    <tr>
-      <td>Activity` + count + `</td>
-      <td>A` + count + `</td>
-      <td><input class = "TextField" type="number" name="nameWeight"></td>
-      <td>
-      <input class = "TextField" type="number" name="fname" onkeyup = "calculatePercentageOne()">
-      <label class = "LabelSize">/</label>
-      <input class = "TextField" type="number" name="lname" onkeyup = "calculatePercentageTwo()">
-      </td>
-      <td>
-        <h3 id = "percent-` + count + `"></h3>
-      </td>
-    </tr>
-  </tbody>
-    `;
+    
+    let row = document.createElement("tbody");
+    row.innerHTML = `
+      <tr>
+        <td>Activity` + count + `</td>
+        <td>A` + count + `</td>
+        <td><input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="nameWeight"></td>
+        <td>
+        <input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="fname" onkeyup = "calculatePercentageOne()">
+        <label class = "LabelSize">/</label>
+        <input class = "TextField" type="number" onkeypress = "return event.charCode >= 48" min="0" name="lname" onkeyup = "calculatePercentageTwo()">
+        </td>
+        <td>
+          <h3 class = "headerThree" id = "percent-` + count + `"></h3>
+        </td>
+      </tr>
+      `;
+
+      document.querySelector("table").appendChild(row);
 
   });
 

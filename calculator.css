@@ -95,6 +95,11 @@ td {
     width: 20%;
 }
 
+.headerThree {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .ButtonAddAcitivity {
     margin-bottom: 1em;
     margin-left: 1em;
