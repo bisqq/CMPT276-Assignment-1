@@ -1,7 +1,7 @@
 # CMPT276-Assignment-1
 
 ```
-$ git clone https://github.com/bisqq/CMPT276-Assignment-1.git 
+$ git clone https://github.com/bisqqSchool/CMPT276-Assignment-1.git 
 ```
 
 ### Website for the heroku assignment
